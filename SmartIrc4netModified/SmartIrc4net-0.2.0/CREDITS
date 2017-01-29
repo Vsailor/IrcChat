@@ -1,0 +1,28 @@
+/**
+ * $Id: CREDITS 78 2004-09-19 13:33:02Z meebey $
+ * $URL: svn://svn.qnetp.net/smartirc/SmartIrc4net/tags/0.2.0/CREDITS $
+ * $Rev: 78 $
+ * $Author: meebey $
+ * $Date: 2004-09-19 15:33:02 +0200 (Sun, 19 Sep 2004) $
+ */
+
+This is the creditslist for SmartIrc4net
+
+The fields are:
+(N) name
+(E) email
+(W) web-address
+(P) PGP key ID and fingerprint
+(D) description
+(S) snail-mail address
+---------------------------
+
+N: Mirco Bauer
+E: meebey@meebey.net
+E: meebey@php.net
+W: www.meebey.net
+P: EEF946C8 / ABE1 95E1 50A8 DBE7 809D  3F42 7127 E5AB EEF9 46C8
+D: Project Leader
+S: Kroonhorst 42
+S: 22549 Hamburg
+S: Germany

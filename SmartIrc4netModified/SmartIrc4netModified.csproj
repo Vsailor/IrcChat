@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC37BB96-5F80-4123-BB67-B340EC2C6C5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SmartIrc4netModified</RootNamespace>
+    <AssemblyName>SmartIrc4netModified</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\AssemblyInfo.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\Channel.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\ChannelUser.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\Consts.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\Data.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\Delegates.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\IrcClient.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\IrcCommands.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\IrcConnection.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\IrcTcpClient.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\IrcUser.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\Logger.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\PrimaryOnFallbackEncoding.cs" />
+    <Compile Include="SmartIrc4net-0.2.0\src\Rfc2812.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SmartIrc4net-0.2.0\bin\log4net.dll" />
+    <Content Include="SmartIrc4net-0.2.0\bin\mono\debug\Meebey.SmartIrc4net.dll" />
+    <Content Include="SmartIrc4net-0.2.0\bin\mono\release\Meebey.SmartIrc4net.dll" />
+    <Content Include="SmartIrc4net-0.2.0\docs\rfc2812.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SmartIrc4net-0.2.0\CHANGELOG" />
+    <None Include="SmartIrc4net-0.2.0\CREDITS" />
+    <None Include="SmartIrc4net-0.2.0\CSharpBuilder\Meebey.SmartIrc4net.bdsgroup" />
+    <None Include="SmartIrc4net-0.2.0\CSharpBuilder\Meebey.SmartIrc4net.bdsproj" />
+    <None Include="SmartIrc4net-0.2.0\CSharpBuilder\Meebey.SmartIrc4net.dsk" />
+    <None Include="SmartIrc4net-0.2.0\FEATURES" />
+    <None Include="SmartIrc4net-0.2.0\LICENSE" />
+    <None Include="SmartIrc4net-0.2.0\MonoDevelop\SmartIrc4net.cmbx" />
+    <None Include="SmartIrc4net-0.2.0\MonoDevelop\SmartIrc4net.prjx" />
+    <None Include="SmartIrc4net-0.2.0\README" />
+    <None Include="SmartIrc4net-0.2.0\src\Makefile" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
